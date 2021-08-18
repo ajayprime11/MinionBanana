@@ -1,17 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
 
-.styletext{
-   width: 90%;
-   height: 10vh;
-   display: block;
-   margin: 1rem;
-   padding: 1rem;
-}
 
 .textstyle .headtext{
    font-size: 25px;
    font-weight: 500;
    font-family: 'Kalam', cursive;
+   text-align: center;
 }
 #output{
    
@@ -21,33 +15,37 @@
     max-height: 20vh;
     overflow:scroll;
     border: 1px solid var(--black);
-
+    color: black;
+    border-radius: 12px;
+    max-width: 100vh;
+    align-self: center;
+    padding-left: 200px;
+  
+    display: inline-block;
 }
-
-
-
-
-
-
 
 * {
     box-sizing: border-box;
+    text-align: center;
 }
 
 :root {
-    --primary: #F2C94C;
+   
     --black: #333333;
     --width-break:600px
 }
 
 body {
+    background-color: #a1db00;
+    background-image: url("https://www.transparenttextures.com/patterns/sandpaper.png");
     margin: 0;
     font-family: 'Kalam', cursive;
     color: #333333;
 }
 
 nav {
-    background-color: var(--primary);
+    background-color: #a1db00;
+    background-image: url("https://www.transparenttextures.com/patterns/sandpaper.png");
     text-align: center;
 }
 
@@ -59,20 +57,25 @@ main {
 
 textarea {
     box-sizing: border-box;
-    display: block;
+    display: inline-block;
     width: 100%;
-    min-height: 20vh;
+    min-height: 10vh;
+    max-width: 100vh;
     margin-top: 2rem;
     font-size: large;
     font-family: inherit;
+    text-align: left;
+     border-radius: 12px;
+   
+     
 }
 
 .button {
-    align-self: center;
-        background-color: yellowgreen;
         border: none;
-        color: white;
-        padding: 10px;
+        background-color: #a1db00;
+        background-image: url("https://www.transparenttextures.com/patterns/sandpaper.png");
+        color: black;
+        padding: 8px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
@@ -82,6 +85,7 @@ textarea {
     font-family: 'Kalam', cursive;
     font-size: large;
     border-radius: 12px;
+    border: 1px solid black;
 }
 
 /** footers **/
@@ -93,6 +97,7 @@ footer {
         padding: 1rem;
         background-color: var(--primary);
         text-align: center;
+        padding-top: 50px;
 }
 
 footer p {
